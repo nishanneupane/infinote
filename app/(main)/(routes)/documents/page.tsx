@@ -17,7 +17,7 @@ const DocumentPage = () => {
 
     const onCreate = () => {
         const promise = create({ title: "Untitled" })
-            .then((documentId) => router.push(`/documents/${documentId}`))
+            .then((documentId) => router.push(`/${documentId}`))
         toast.promise(promise, {
             loading: "Creating a new note",
             success: "New note created",
